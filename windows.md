@@ -1,0 +1,21 @@
+# Windows
+
+## WSL
+????
+
+
+## Terminal
+????
+
+
+## Shell
+????
+
+
+## Shell Prompt
+????
+
+
+## MobaXTerm
+https://mobaxterm.mobatek.net/
+
