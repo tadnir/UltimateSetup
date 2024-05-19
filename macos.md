@@ -32,6 +32,7 @@ https://ohmyz.sh/
 Plugins:
 * git
 * zsh-autosuggestions
+* zsh-syntax-highlighting
 * fzf
 
 ### zsh-autosuggestions
@@ -39,6 +40,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ### fzf
 `brew install fzf`
+
+### zsh-syntax-highlighting
+follow ohmyzsh instructions under https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
 ## PowerLevel10k
 https://github.com/romkatv/powerlevel10k
