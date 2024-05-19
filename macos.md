@@ -14,6 +14,7 @@ https://brew.sh/
 Move to the brew zsh installation from the prebuilt, for easy updates.
 
 `brew install zsh`
+`chsh -s \`which zsh\``
 
 
 ## OMZ - Oh My Zsh
