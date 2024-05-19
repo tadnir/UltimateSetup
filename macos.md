@@ -3,6 +3,10 @@
 ## Iterm2
 https://iterm2.com/
 
+### Color Scheme
+visit https://iterm2colorschemes.com
+
+follow installation instructions and choose `zenwritten_dark`
 
 ## Brew
 https://brew.sh/
