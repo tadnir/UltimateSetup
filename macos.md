@@ -33,6 +33,8 @@ Plugins:
 ### zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+### fzf
+`brew install fzf`
 
 ## PowerLevel10k
 https://github.com/romkatv/powerlevel10k
