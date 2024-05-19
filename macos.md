@@ -67,3 +67,9 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 `brew install eza`
 
 TODO: choose ohmyzsh integration or alias ls
+
+
+## Python
+
+### pipx
+https://github.com/pypa/pipx
