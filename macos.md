@@ -34,6 +34,7 @@ Plugins:
 * zsh-autosuggestions
 * zsh-syntax-highlighting
 * fzf
+* zsh-eza
 
 ### zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -66,7 +67,9 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 `brew install eza`
 
-TODO: choose ohmyzsh integration or alias ls
+```
+git clone --depth=1 https://github.com/renovate-bot/z-shell-_-zsh-eza.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-eza
+```
 
 
 ## Python
