@@ -6,7 +6,7 @@ https://iterm2.com/
 ### Color Scheme
 visit https://iterm2colorschemes.com
 
-follow installation instructions and choose `zenwritten_dark`
+follow installation instructions and choose `konsole/zenwritten_dark.colorscheme`
 
 ## Brew
 https://brew.sh/
