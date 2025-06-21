@@ -75,6 +75,39 @@ scoop install pipx
 pipx ensurepath
 ```
 
+### Python packages
+```
+pipx install frogmouth
+```
+* https://github.com/Textualize/frogmouth
+
+
+## Zoxide
+>Get the full instructions - https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
+
+Run:
+```
+scoop install zoxide
+scoop install fzf
+```
+Add the following to the end of the `profile` file:
+```
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+```
+
+
+## PowerShell Gallery
+Recommendations:
+* [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
+```
+Install-Module -Name Terminal-Icons -Repository PSGallery
+Import-Module Terminal-Icons
+```
+* [PSReadLine]()
+```
+Install-Module -Name PSReadLine -Repository PSGallery
+Import-Module PSReadLine
+```
 
 ## WSL
 ```
