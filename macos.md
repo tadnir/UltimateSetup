@@ -1,5 +1,8 @@
 # MacOS
 
+## Brew
+Run the updated command from here - https://brew.sh/
+
 ## Iterm2
 https://iterm2.com/
 
