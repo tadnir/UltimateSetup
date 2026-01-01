@@ -141,3 +141,6 @@ from - https://slack.com/downloads/mac
 
 ### OBS - Screen recording
 from - https://obsproject.com/download
+
+### Raycast - Clipboard & Spotlight
+from - https://www.raycast.com/
