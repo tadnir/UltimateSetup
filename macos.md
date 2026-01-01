@@ -8,8 +8,10 @@ visit https://iterm2colorschemes.com
 
 follow installation instructions and choose `schemes/zenwritten_dark.itermcolors`
 
+After the import set the theme under Profiles > (Default Profile) > Colors > Color Preset
+
 ### Look
-Appearance > General: 
+Appearance > General:
  - change theme to 'minimal'
    
 Appearance > Windows:
@@ -25,6 +27,28 @@ Appearance > Panes:
 Appearance > Dimming:
  - set 'Dimming amount' to 20
 
+Profiles > (Default Profile) > Window:
+ - New windows: '110 columns by 30 rows'
+
+
+### Important!
+ - tick 'Unlimited scrollback' under Profiles > (Default Profile) > Terminal
+
+
+### Hot window
+ - Keys > Hotkey > 'Create a dedicated Hotkey window'
+ - Set Hotkey (recommanded Options+Command+C)
+ - untick 'Pin hotkey window'
+ - untick 'Automatically reopen on app reactivation'
+ - tick 'Animate showing and hiding'
+ - tick 'Floating window'
+ - Go to hotkey profile
+ - under window:
+   - set transparancy to 0
+   - set style to full screen
+   - set screen to 'Screen with Cursor'
+   - set space to 'All Spaces'
+    
 
 ## Brew
 Run the updated command from here:
