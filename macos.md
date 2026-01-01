@@ -120,3 +120,6 @@ git clone --depth=1 https://github.com/renovate-bot/z-shell-_-zsh-eza.git ${ZSH_
 
 ### pipx
 https://github.com/pypa/pipx
+
+## Caffeine
+install from here with brew - https://formulae.brew.sh/cask/caffeine
