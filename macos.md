@@ -130,6 +130,7 @@ install from here with brew - https://formulae.brew.sh/cask/caffeine
 
 ### AltTab
 from - https://alt-tab-macos.netlify.app/
+
 brew - `brew install --cask alt-tab`
 
 ### Zoom
