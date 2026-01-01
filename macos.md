@@ -1,8 +1,5 @@
 # MacOS
 
-## Brew
-Run the updated command from here - https://brew.sh/
-
 ## Iterm2
 https://iterm2.com/
 
@@ -12,8 +9,10 @@ visit https://iterm2colorschemes.com
 follow installation instructions and choose `schemes/zenwritten_dark.itermcolors`
 
 ## Brew
+Run the updated command from here:
 https://brew.sh/
 
+should look like so:
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 
