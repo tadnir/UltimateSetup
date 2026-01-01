@@ -8,6 +8,19 @@ visit https://iterm2colorschemes.com
 
 follow installation instructions and choose `schemes/zenwritten_dark.itermcolors`
 
+### Look
+Appearance > General: 
+ - change theme to 'minimal'
+Appearance > Windows:
+ - tick 'Hide Scrollbars'
+Appearance > Tabs:
+ - tick 'Show tab bar even when there is only one tab'
+ - untick 'Stretch tabs to fill bar'
+Appearance > Panes:
+ - untick 'Show per-pane title bars'
+Appearance > Dimming:
+ - set 'Dimming amount' to 20
+
 ## Brew
 Run the updated command from here:
 https://brew.sh/
