@@ -119,7 +119,15 @@ git clone --depth=1 https://github.com/renovate-bot/z-shell-_-zsh-eza.git ${ZSH_
 ## Python
 
 ### pipx
-https://github.com/pypa/pipx
+from - https://github.com/pypa/pipx
 
-## Caffeine
+## Apps
+### Cursor
+from - https://cursor.com/agents
+
+### Caffeine
 install from here with brew - https://formulae.brew.sh/cask/caffeine
+
+### AltTab
+from - https://alt-tab-macos.netlify.app/
+brew - `brew install --cask alt-tab`
