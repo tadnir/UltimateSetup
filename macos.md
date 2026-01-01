@@ -125,9 +125,18 @@ from - https://github.com/pypa/pipx
 ### Cursor
 from - https://cursor.com/agents
 
-### Caffeine
+### Caffeine - Always on display
 install from here with brew - https://formulae.brew.sh/cask/caffeine
 
 ### AltTab
 from - https://alt-tab-macos.netlify.app/
 brew - `brew install --cask alt-tab`
+
+### Zoom
+from - https://zoom.us/download
+
+### Slack
+from - https://slack.com/downloads/mac
+
+### OBS - Screen recording
+from - https://obsproject.com/download
