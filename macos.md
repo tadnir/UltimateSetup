@@ -144,3 +144,6 @@ from - https://obsproject.com/download
 
 ### Raycast - Clipboard & Spotlight
 from - https://www.raycast.com/
+
+### Obsidian
+from - https://obsidian.md/
