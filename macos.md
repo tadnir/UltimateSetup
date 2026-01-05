@@ -71,6 +71,7 @@ Plugins:
 * zsh-syntax-highlighting
 * fzf
 * zsh-eza
+* zoxide
 
 #### zsh-autosuggestions
 `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
@@ -88,6 +89,14 @@ follow ohmyzsh instructions under [here](https://github.com/zsh-users/zsh-syntax
 git clone --depth=1 https://github.com/renovate-bot/z-shell-_-zsh-eza.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-eza
 ```
 
+### Zoxide
+[Zoxide](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation) is a better `cd` command, installation:
+```
+brew install zoxide
+curl --create-dirs -O --output-dir ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zoxide https://raw.githubusercontent.com/ajeetdsouza/zoxide/refs/heads/main/zoxide.plugin.zsh
+chmod -R 755 ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zoxide 
+```
+
 ### Prompt
 #### PowerLevel10k
 follow from [here](https://github.com/romkatv/powerlevel10k), should be:
@@ -98,7 +107,11 @@ Set in `~/.zshrc` the following: `ZSH_THEME="powerlevel10k/powerlevel10k"`
 Then open a new terminal to configure p10k
 
 ### Sudo with touchid
-follow - https://apple.stackexchange.com/questions/259093/can-touch-id-on-mac-authenticate-sudo-in-terminal?newreg=e1fd0b41296e43c28e7632ada91dd0cb
+taken from [here](https://apple.stackexchange.com/questions/259093/can-touch-id-on-mac-authenticate-sudo-in-terminal?newreg=e1fd0b41296e43c28e7632ada91dd0cb)
+```
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+```
+
 ## Vim
 Base on [vimrc](https://github.com/amix/vimrc)
 
