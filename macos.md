@@ -145,6 +145,8 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
  - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#:~:text=The%20following%20steps%20show%20how%20to%20install%20the%20latest%20version%20of%20the%20AWS%20CLI%20by%20using%20the%20standard%20macOS%20user%20interface%20and%20your%20browser.) - follow the GUI install for all users on the local machine
 ## Apps
 - [Cursor](https://cursor.com/agents)
+	- If installed power10k prompt you need to change the cursor terminal font:
+	  settings -> VS Code Settings -> Features -> Terminal -> Font Family: put `MesloLGS NF`
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Caffeine - Always on display](https://www.caffeine-app.net/) - `brew install --cask caffeine`
 - [AltTab](https://alt-tab-macos.netlify.app) - `brew install --cask alt-tab`
@@ -154,4 +156,9 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 - [OBS - Screen recording](https://obsproject.com/download)
 - [Raycast - Clipboard & Spotlight](https://www.raycast.com/)
 - [Obsidian](https://obsidian.md/)
+	- Configs:
+		- settings -> files and links -> show all file types: on
+		- settings -> editor -> readable file length: off
+	- Plugins:
+		- git - Adds a panel for committing and pulling changes if the vault is a git repo
 - [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
