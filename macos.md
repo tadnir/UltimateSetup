@@ -154,3 +154,4 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 - [OBS - Screen recording](https://obsproject.com/download)
 - [Raycast - Clipboard & Spotlight](https://www.raycast.com/)
 - [Obsidian](https://obsidian.md/)
+- [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
