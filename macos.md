@@ -135,18 +135,20 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
   ```
   brew tap hashicorp/tap
   brew install hashicorp/tap/terraform
+  terraform -install-autocomplete
   ```
 - [GH (GitHub Cli)](https://cli.github.com/): 
   ```
     brew install gh
     gh auth login
     ```
-
+ - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#:~:text=The%20following%20steps%20show%20how%20to%20install%20the%20latest%20version%20of%20the%20AWS%20CLI%20by%20using%20the%20standard%20macOS%20user%20interface%20and%20your%20browser.) - follow the GUI install for all users on the local machine
 ## Apps
 - [Cursor](https://cursor.com/agents)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Caffeine - Always on display](https://www.caffeine-app.net/) - `brew install --cask caffeine`
 - [AltTab](https://alt-tab-macos.netlify.app) - `brew install --cask alt-tab`
+  Tip: you can configure Cmd+Tab to be the hotkey
 - [Zoom](https://zoom.us/download)
 - [Slack](https://slack.com/downloads/mac)
 - [OBS - Screen recording](https://obsproject.com/download)
