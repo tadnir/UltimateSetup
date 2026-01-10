@@ -129,20 +129,24 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 
 
 ## Utilities
-- Kubectl: `brew install kubectl`
 - Tmux: `brew install tmux`
+- [GH (GitHub Cli)](https://cli.github.com/): 
+  ```
+    brew install gh
+    gh auth login
+    ```
+- Kubectl: `brew install kubectl`
 - [Terraform](https://developer.hashicorp.com/terraform/install):
   ```
   brew tap hashicorp/tap
   brew install hashicorp/tap/terraform
   terraform -install-autocomplete
   ```
-- [GH (GitHub Cli)](https://cli.github.com/): 
-  ```
-    brew install gh
-    gh auth login
-    ```
  - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#:~:text=The%20following%20steps%20show%20how%20to%20install%20the%20latest%20version%20of%20the%20AWS%20CLI%20by%20using%20the%20standard%20macOS%20user%20interface%20and%20your%20browser.) - follow the GUI install for all users on the local machine
+ - Pnpm: `brew install pnpm`
+ - node: `brew install node`
+ - [SteamPipe](https://steampipe.io/downloads): `brew install turbot/tap/steampipe`
+	 - sql-like query utility for everything (e.g aws/gcp/azure resources, slack, 1password)
 ## Apps
 - [Cursor](https://cursor.com/agents)
 	- If installed power10k prompt you need to change the cursor terminal font:
@@ -160,5 +164,5 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 		- settings -> files and links -> show all file types: on
 		- settings -> editor -> readable file length: off
 	- Plugins:
-		- git - Adds a panel for committing and pulling changes if the vault is a git repo
+		- git - Adds a panel for commiting and pulling changes if the valu
 - [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
