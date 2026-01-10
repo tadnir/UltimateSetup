@@ -104,7 +104,12 @@ follow from [here](https://github.com/romkatv/powerlevel10k), should be:
 
 Set in `~/.zshrc` the following: `ZSH_THEME="powerlevel10k/powerlevel10k"`
 
-Then open a new terminal to configure p10k
+Then open a new terminal to configure p10k, choose what ever you like. It's recommended to use unicode.
+
+#### Configuration 
+comment the following:
+- line 408: `(( $#branch > 32 )) && branch[13,-13]="…"  # <-- this line`
+- line 1300: `typeset -g POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND='kubectl|helm|kubens|kubectx|oc|istioctl|kogito|k9s|helmfile|flux|fluxctl|stern|kubeseal|skaffold|kubent|kubecolor|cmctl|sparkctl'`
 
 ### Sudo with touchid
 taken from [here](https://apple.stackexchange.com/questions/259093/can-touch-id-on-mac-authenticate-sudo-in-terminal?newreg=e1fd0b41296e43c28e7632ada91dd0cb)
