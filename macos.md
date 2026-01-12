@@ -135,6 +135,7 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 
 ## Utilities
 - Tmux: `brew install tmux`
+- watch: `brew install watch`
 - [GH (GitHub Cli)](https://cli.github.com/): 
   ```
     brew install gh
