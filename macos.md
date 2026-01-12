@@ -141,6 +141,7 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
     gh auth login
     ```
 - Kubectl: `brew install kubectl`
+- Helm: `brew install helm`
 - [Terraform](https://developer.hashicorp.com/terraform/install):
   ```
   brew tap hashicorp/tap
@@ -171,3 +172,17 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 	- Plugins:
 		- git - Adds a panel for commiting and pulling changes if the valu
 - [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
+
+## Git
+### git ls
+Shows a full git tree graph
+```
+git config --global alias.ls "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
+```
+
+### git new-branch
+Creates pushes and switch to, a new branch
+```
+git config --global alias.new-branch '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
+git config --global alias.nb '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
+```
