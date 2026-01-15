@@ -143,6 +143,7 @@ install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
     brew install gh
     gh auth login
     ```
+- [git-trim](https://github.com/foriequal0/git-trim): `brew install git-trim`
 - Kubectl: `brew install kubectl`
 - Helm: `brew install helm`
 - [Terraform](https://developer.hashicorp.com/terraform/install):
