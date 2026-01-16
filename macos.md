@@ -130,10 +130,19 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 ## Python
 make sure your python is updated `python3 --version`
 
-### pipx
+### pipx - deprecated
 manages python venvs for tools (e.g for utilities on the global path)
 install from [here](https://github.com/pypa/pipx), should be `brew install pipx`
 
+### uv
+manages python version installations, venvs, utilities, and the universe.
+- [Installation](https://docs.astral.sh/uv/getting-started/installation/#upgrading-uv): `curl -LsSf https://astral.sh/uv/install.sh | sh`
+- updates: `uv self update` (only works if installed with the install script and not with pip/brew)
+- shell completions:
+	- **recommended** to use this [oh-my-zsh plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/uv): just add uv to the plugins list
+	- or run: 
+	  `echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc`
+	  `echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc`
 
 ## Utilities
 - Tmux: `brew install tmux`
