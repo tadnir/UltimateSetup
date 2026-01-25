@@ -155,6 +155,7 @@ manages python version installations, venvs, utilities, and the universe.
 - [git-trim](https://github.com/foriequal0/git-trim): `brew install git-trim`
 - Kubectl: `brew install kubectl`
 - Helm: `brew install helm`
+- Minikube: `brew install minikube`
 - [Terraform](https://developer.hashicorp.com/terraform/install):
   ```
   brew tap hashicorp/tap
@@ -167,6 +168,7 @@ manages python version installations, venvs, utilities, and the universe.
  - node: `brew install node`
  - [SteamPipe](https://steampipe.io/downloads): `brew install turbot/tap/steampipe`
 	 - sql-like query utility for everything (e.g aws/gcp/azure resources, slack, 1password)
+ - grpcurl: `brew install grpcurl`
 ## Apps
 - [Cursor](https://cursor.com/agents)
 	- If installed power10k prompt you need to change the cursor terminal font:
