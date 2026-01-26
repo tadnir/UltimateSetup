@@ -156,12 +156,16 @@ manages python version installations, venvs, utilities, and the universe.
 - Kubectl: `brew install kubectl`
 - Helm: `brew install helm`
 - Minikube: `brew install minikube`
+- kubectx
+- kubens
+- k9s
 - [Terraform](https://developer.hashicorp.com/terraform/install):
   ```
   brew tap hashicorp/tap
   brew install hashicorp/tap/terraform
   terraform -install-autocomplete
   ```
+ - Terragrunt: `brew install terragrunt`
  - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#:~:text=The%20following%20steps%20show%20how%20to%20install%20the%20latest%20version%20of%20the%20AWS%20CLI%20by%20using%20the%20standard%20macOS%20user%20interface%20and%20your%20browser.) - follow the GUI install for all users on the local machine
  - [Azure CLI](brew install azure-cli) - `brew install azure-cli`
  - Pnpm: `brew install pnpm`
