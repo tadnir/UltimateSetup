@@ -40,14 +40,14 @@ Profiles > (Default Profile) > Window:
 
 #### Hot window
  - Keys > Hotkey > 'Create a dedicated Hotkey window'
- - Set Hotkey (recommanded Options+Command+C)
- - untick 'Pin hotkey window'
+ - Set Hotkey (recommended Options+Command+C)
+ - tick 'Pin hotkey window'
  - untick 'Automatically reopen on app reactivation'
  - tick 'Animate showing and hiding'
  - tick 'Floating window'
  - Go to hotkey profile
  - under window:
-   - set transparancy to 0
+   - set transparency to 0
    - set style to full screen
    - set screen to 'Screen with Cursor'
    - set space to 'All Spaces'
