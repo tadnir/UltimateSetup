@@ -205,6 +205,7 @@ manages python version installations, venvs, utilities, and the universe.
 	- Plugins:
 		- git - Adds a panel for commiting and pulling changes if the valu
 - [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
+- [PgAdmin](https://www.pgadmin.org/) - `brew install --cask pgadmin4` (Don't install with DMG, to upgrade with brew)
 
 ## Git
 ### git ls
