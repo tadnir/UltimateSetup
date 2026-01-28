@@ -37,7 +37,6 @@ Profiles > (Default Profile) > Window:
 
 #### Unlimited scrollback
  - tick 'Unlimited scrollback' under Profiles > (Default Profile) > Terminal
-
 #### Natural Editing
 This fixes key mapping for combinations like ⌥← or ⌘⌫.
 - Open iTerm2.
@@ -58,6 +57,7 @@ This fixes key mapping for combinations like ⌥← or ⌘⌫.
    - set style to full screen
    - set screen to 'Screen with Cursor'
    - set space to 'All Spaces'
+- NOTE: You may need to repeat Profiles settings (Like Unlimited scrollback & Natural Editing) for this profile.
 
 ### zsh
 Move to the brew zsh installation from the prebuilt, for easy updates.
