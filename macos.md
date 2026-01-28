@@ -158,7 +158,7 @@ manages python version installations, venvs, utilities, and the universe.
 - Minikube: `brew install minikube`
 - kubectx: `brew install kubectx`
 - [kubens](https://webinstall.dev/kubens/): `curl -sS https://webi.sh/kubens | sh; \ source ~/.config/envman/PATH.env`
-- k9s
+- k9s: `brew install k9s`
 - [Terraform](https://developer.hashicorp.com/terraform/install):
   ```
   brew tap hashicorp/tap
