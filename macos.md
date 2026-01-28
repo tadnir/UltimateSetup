@@ -15,7 +15,7 @@ follow installation instructions and choose `schemes/zenwritten_dark.itermcolors
 
 After the import set the theme under Profiles > (Default Profile) > Colors > Color Preset
 
-#### Look
+#### Look & Feel
 Appearance > General:
  - change theme to 'minimal'
    
@@ -30,14 +30,21 @@ Appearance > Panes:
  - untick 'Show per-pane title bars'
    
 Appearance > Dimming:
- - set 'Dimming amount' to 20
+ - set 'Dimming amount' to 10
 
 Profiles > (Default Profile) > Window:
  - New windows: '110 columns by 30 rows'
 
-#### Important!
+#### Unlimited scrollback
  - tick 'Unlimited scrollback' under Profiles > (Default Profile) > Terminal
 
+#### Natural Editing
+This fixes key mapping for combinations like ⌥← or ⌘⌫.
+- Open iTerm2.
+- Press '**⌘ + ,**' (Command + Comma) to open **Settings**.
+- Go to **Profiles** > **Keys**.
+- In the bottom of the "Key Mappings" tab, look for the **Presets...** dropdown button.
+- Select **Natural Text Editing**.
 #### Hot window
  - Keys > Hotkey > 'Create a dedicated Hotkey window'
  - Set Hotkey (recommended Options+Command+C)
