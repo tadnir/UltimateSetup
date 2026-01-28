@@ -32,6 +32,9 @@ Appearance > Panes:
 Appearance > Dimming:
  - set 'Dimming amount' to 10
 
+General > Selection:
+ - untick 'Clicking on a command selects it to restrict Find and Filter'
+
 Profiles > (Default Profile) > Window:
  - New windows: '110 columns by 30 rows'
 
