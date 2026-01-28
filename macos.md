@@ -149,15 +149,15 @@ manages python version installations, venvs, utilities, and the universe.
 - watch: `brew install watch`
 - [GH (GitHub Cli)](https://cli.github.com/): 
   ```
-    brew install gh
-    gh auth login
-    ```
+  brew install gh 
+  gh auth login
+  ```
 - [git-trim](https://github.com/foriequal0/git-trim): `brew install git-trim`
 - Kubectl: `brew install kubectl`
 - Helm: `brew install helm`
 - Minikube: `brew install minikube`
-- kubectx
-- kubens
+- kubectx: `brew install kubectx`
+- [kubens](https://webinstall.dev/kubens/): `curl -sS https://webi.sh/kubens | sh; \ source ~/.config/envman/PATH.env`
 - k9s
 - [Terraform](https://developer.hashicorp.com/terraform/install):
   ```
