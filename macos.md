@@ -48,6 +48,7 @@ This fixes key mapping for combinations like ⌥← or ⌘⌫.
 - In the bottom of the "Key Mappings" tab, look for the **Presets...** dropdown button.
 - Select **Natural Text Editing**.
 #### Hot window
+A Terminal window that shows/hides on a key bind.
  - Keys > Hotkey > 'Create a dedicated Hotkey window'
  - Set Hotkey (recommended Options+Command+C)
  - tick 'Pin hotkey window'
