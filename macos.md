@@ -40,6 +40,7 @@ Profiles > (Default Profile) > Window:
 
 #### Unlimited scrollback
  - tick 'Unlimited scrollback' under Profiles > (Default Profile) > Terminal
+
 #### Natural Editing
 This fixes key mapping for combinations like ⌥← or ⌘⌫.
 - Open iTerm2.
@@ -47,6 +48,7 @@ This fixes key mapping for combinations like ⌥← or ⌘⌫.
 - Go to **Profiles** > **Keys**.
 - In the bottom of the "Key Mappings" tab, look for the **Presets...** dropdown button.
 - Select **Natural Text Editing**.
+
 #### Hot window
 A Terminal window that shows/hides on a key bind.
  - Keys > Hotkey > 'Create a dedicated Hotkey window'
