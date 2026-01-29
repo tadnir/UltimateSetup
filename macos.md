@@ -220,3 +220,69 @@ Creates pushes and switch to, a new branch
 git config --global alias.new-branch '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
 git config --global alias.nb '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
 ```
+
+## AWS
+### CLI 
+#### SSO - first setup
+- Run `aws configure sso`
+- Use the following:
+  ```
+  SSO session name (Recommended): <Company Name>
+  SSO start URL [None]: https://<Company Domain>.awsapps.com/start
+  SSO region [None]: us-east-1
+  SSO registration scopes [sso:account:access]: <Use Default>
+  ```
+  - Browser will open, authorize the access
+  - At this point the SSO is configured, the setup will continue to the first account
+  - The setup will ask you to choose an account, role and then a region. enter a value for all.
+  - Keep the default output format - json
+  - Choose a name for the profile (something short and clear)
+  - Run `aws sts get-caller-identity --profile <profile name>` and check it makes sense
+
+#### SSO - adding accounts
+The easiest way is to just edit the config file under `~/.aws/config`
+the file should look like this:
+```
+[sso-session <Company Name>]
+sso_start_url = https://<company domain>.awsapps.com/start
+sso_region = us-east-1
+sso_registration_scopes = sso:account:access
+
+[profile <profile 1>]
+sso_session = <Company Name>
+sso_account_id = <AWS Account ID 1>
+sso_role_name = Administrator # Or other role
+region = us-east-1
+
+[profile <profile 2>]
+sso_session = <Company Name>
+sso_account_id = <AWS Account ID 2>
+sso_role_name = Engineer # Or other role
+region = us-west-1
+```
+
+#### Changing profiles
+All aws cli command accept a `--profile` parameter, but this can also be set globally with specifying for each command. 
+The profiles are governed by an env var called `AWS_PROFILE`, you can set it manually with `export AWS_PROFILE=<profile>`
+A better way is to config the OMZ plugin `aws`, It's preinstalled so just add to the plugin list and you got it.
+To use it simply run `asp` (aws switch profile) and give it the profile name (can tab complete and integrate with fzf).
+NOTE: do not use `acp` (aws change profile), it uses an older way of authentication that's not via SSO.
+
+#### Login to profile
+Simply run `aws sso login` while in a profile or with `aws sso login --profile <profile name>`
+this token lives usually for a day.
+
+## Access EKS
+### Configure kubeconfig
+To access EKS you need to configure the kube config, this depends on the aws profile your using.
+- Switch to a profile
+- Login
+- Run: `aws eks list-clusters | cat`
+- Run: `aws eks update-kubeconfig --name <cluster name>`
+- Now you've configured access to the cluster from the aws profile, while you're logged in you can access k8s API.
+NOTE: once configured, you don't need the aws profile selected (i.e in the AWS_PROFILE env). the kubeconfig points to that profile, which in-turn points to the SSO session, which is shared between all your profiles. one login to rule them all.
+### Choose cluster/namespace
+To choose the cluster it's recommended to use `kubectx`, just run it and it should show you the available clusters you can choose from.
+Once chosen your commands will access that cluster.
+To choose a namespace it's recommended to use `kubens`, works just like kubectx but for namespaces.
+After choosing, test with `kubectl get pod`
