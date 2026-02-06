@@ -165,7 +165,6 @@ manages python version installations, venvs, utilities, and the universe.
   brew install gh 
   gh auth login
   ```
-- [git-trim](https://github.com/foriequal0/git-trim): `brew install git-trim`
 - Kubectl: `brew install kubectl`
 - Helm: `brew install helm`
 - Minikube: `brew install minikube`
@@ -219,6 +218,10 @@ manages python version installations, venvs, utilities, and the universe.
 - [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
 
 ## Git
+
+### git trim
+Removes local branches deleted in remote
+[git-trim](https://github.com/foriequal0/git-trim): `brew install git-trim`
 ### git ls
 Shows a full git tree graph
 ```
@@ -232,6 +235,16 @@ git config --global alias.new-branch '!f() { git checkout -b "$1" && git push -u
 git config --global alias.nb '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
 ```
 
+### git auto correct
+```
+git config --global help.autocorrect 1
+```
+
+### Other
+- brew install git-absorb
+- brew install git-extras
+- brew install jesseduffield/lazygit/lazygit
+- brew install git-delta
 ## AWS
 ### CLI 
 #### SSO - first setup
