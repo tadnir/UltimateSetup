@@ -187,25 +187,36 @@ manages python version installations, venvs, utilities, and the universe.
 	 - sql-like query utility for everything (e.g aws/gcp/azure resources, slack, 1password)
  - grpcurl: `brew install grpcurl`
 ## Apps
-- [Cursor](https://cursor.com/agents)
-	- If installed power10k prompt you need to change the cursor terminal font:
-	  settings -> VS Code Settings -> Features -> Terminal -> Font Family: put `MesloLGS NF`
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+### Better Mac
 - [Caffeine - Always on display](https://www.caffeine-app.net/) - `brew install --cask caffeine`
 - [AltTab](https://alt-tab-macos.netlify.app) - `brew install --cask alt-tab`
   Tip: you can configure Cmd+Tab to be the hotkey
-- [Zoom](https://zoom.us/download)
-- [Slack](https://slack.com/downloads/mac)
-- [OBS - Screen recording](https://obsproject.com/download)
-- [Raycast - Clipboard & Spotlight](https://www.raycast.com/)
+- [Raycast - Clipboard & Spotlight](https://www.raycast.com/) - `brew install --cask raycast`
+- [TapHouse](https://taphouse.multimodalsolutions.gr/?ref=producthunt): Brew GUI package manager - `brew install --cask taphouse`
+### Coding & AI
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Cursor](https://cursor.com/agents)
+	- If installed power10k prompt you need to change the cursor terminal font:
+	  settings -> VS Code Settings -> Features -> Terminal -> Font Family: put `MesloLGS NF`
+- Claude
+	- Claude code
+	- Claude code Desktop
+	- Claude app
 - [Obsidian](https://obsidian.md/)
 	- Configs:
 		- settings -> files and links -> show all file types: on
 		- settings -> editor -> readable file length: off
 	- Plugins:
 		- git - Adds a panel for commiting and pulling changes if the valu
-- [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
 - [PgAdmin](https://www.pgadmin.org/) - `brew install --cask pgadmin4` (Don't install with DMG, to upgrade with brew)
+### Utilities
+- 1Password
+	- [Desktop](https://1password.com/downloads/mac) - `brew install --cask 1password`
+	- [Browser extension](https://1password.com/downloads/browser-extension)
+- [Zoom](https://zoom.us/download)
+- [Slack](https://slack.com/downloads/mac)
+- [OBS - Screen recording](https://obsproject.com/download)
+- [Logitech Options+](https://www.logitech.com/en-us/software/logi-options-plus.html)
 
 ## Git
 ### git ls
@@ -272,8 +283,8 @@ NOTE: do not use `acp` (aws change profile), it uses an older way of authenticat
 Simply run `aws sso login` while in a profile or with `aws sso login --profile <profile name>`
 this token lives usually for a day.
 
-## Access EKS
-### Configure kubeconfig
+### Access EKS
+#### Configure kubeconfig
 To access EKS you need to configure the kube config, this depends on the aws profile your using.
 - Switch to a profile
 - Login
@@ -281,7 +292,7 @@ To access EKS you need to configure the kube config, this depends on the aws pro
 - Run: `aws eks update-kubeconfig --name <cluster name>`
 - Now you've configured access to the cluster from the aws profile, while you're logged in you can access k8s API.
 NOTE: once configured, you don't need the aws profile selected (i.e in the AWS_PROFILE env). the kubeconfig points to that profile, which in-turn points to the SSO session, which is shared between all your profiles. one login to rule them all.
-### Choose cluster/namespace
+#### Choose cluster/namespace
 To choose the cluster it's recommended to use `kubectx`, just run it and it should show you the available clusters you can choose from.
 Once chosen your commands will access that cluster.
 To choose a namespace it's recommended to use `kubens`, works just like kubectx but for namespaces.
