@@ -237,8 +237,8 @@ git config --global alias.nb '!f() { git checkout -b "$1" && git push -u origin 
 
 Delete remote branch
 ```
-git config --global alias.remove-branch '!f() { git push origin --delete feature-login "$1"; }; f'
-git config --global alias.rb '!f() { git push origin --delete feature-login "$1"; }; f'
+git config --global alias.remove-branch '!f() { git push origin --delete "$1"; }; f'
+git config --global alias.rb '!f() { git push origin --delete "$1"; }; f'
 ```
 
 ### git auto correct
