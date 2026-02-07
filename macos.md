@@ -228,11 +228,17 @@ Shows a full git tree graph
 git config --global alias.ls "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
 ```
 
-### git new-branch
+### git branchs
 Creates pushes and switch to, a new branch
 ```
 git config --global alias.new-branch '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
 git config --global alias.nb '!f() { git checkout -b "$1" && git push -u origin "$1"; }; f'
+```
+
+Delete remote branch
+```
+git config --global alias.remove-branch '!f() { git push origin --delete feature-login "$1"; }; f'
+git config --global alias.rb '!f() { git push origin --delete feature-login "$1"; }; f'
 ```
 
 ### git auto correct
